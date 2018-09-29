@@ -1,7 +1,5 @@
 def oxford_comma(array)
-  if array.nil?
-    return nil
-  elsif array.count == 1
+  if array.count == 1
     return array[0]
   elsif array.count == 2
     return array.join(" and ")
