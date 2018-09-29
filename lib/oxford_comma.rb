@@ -1,11 +1,6 @@
 def oxford_comma(array)
-  if array.count == 1
-    array.join
-  elsif array.count == 2
-    array.join (" and ")
-  elsif array.count == 3
-    array.join(", ")  
-  else array.count >=4
-    array.join (", ")
-  end
+  return nil if array.nil?
+  return array[0] if array.length == 1
+  return array[0..-2].join(', ') + " and " + array[-1] if array.length > 1
+end
 end
